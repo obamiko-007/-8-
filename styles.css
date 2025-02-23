@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7eaea;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.animated-title {
+    font-size: 2.5em;
+    color: #ff69b4;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.fact, .greeting {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+    animation: slideIn 2s ease-in-out;
+}
+
+.animated-image {
+    width: 150px;
+    animation: bounce 2s infinite;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
