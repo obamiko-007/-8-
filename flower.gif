@@ -1,0 +1,12 @@
+mkdir 8-march-greeting
+cd 8-march-greeting
+
+# Инициализируйте Git-репозиторий
+git init
+
+# Добавьте файлы в репозиторий
+touch index.html styles.css script.js flower.gif
+git add .
+
+# Сделайте первый коммит
+git commit -m "Добавлен проект с поздравлением на 8 марта"
